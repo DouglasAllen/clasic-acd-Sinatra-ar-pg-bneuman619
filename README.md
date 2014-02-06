@@ -1,2 +1,1 @@
-Sinatra-ActiveRecord--Users--Skills--and-Proficiencies
-======================================================
+Sinatra and ActiveRecord Assessment

@@ -1,0 +1,21 @@
+<p>Add your skills:</p>
+  <form method='post' action='/skills'>
+      <label for='skill'>Skill?</label>
+      <select name='skill'>
+        <% Skill.all.each do |skill| %>
+          <option value="<%= skill.name %>"><%= skill.name %></option>
+          <% end %>
+      </select><br>
+      <label for='text'>Years of Experience?</label>
+      <select name='years'>
+          <% 11.times do |i| %>
+          <option value="<%= i %>"><%= i %></option>
+          <% end %>
+      </select><br>
+      <label for='text'>Formal Education?</label>
+      <select name='formal'>
+          <option value="true">true</option>
+          <option value="false">false</option>
+      </select><br>
+      <input type='submit' value='Submit'>
+  </form>
